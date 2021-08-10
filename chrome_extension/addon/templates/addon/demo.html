@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Extension</title>
+        <style type="text/css">
+            body {
+                height: 300px;
+                width: 300px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: brown">Get your low price.</h1>
+        <form method="post">
+            {% csrf_token %}
+            <h4 style="color: gold">Product page link: </h4><label>
+            <input type="text" name="link">
+        </label>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
